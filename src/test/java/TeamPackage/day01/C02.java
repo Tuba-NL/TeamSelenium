@@ -18,5 +18,9 @@ public class C02 {
         }
         driver.get("http://techproeducation.com");
 
+
+
+        System.out.println(driver.getTitle());
+
     }
 }
