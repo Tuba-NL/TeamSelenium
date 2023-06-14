@@ -1,4 +1,4 @@
-package TeamPackage.day06;
+package TeamPackage.day05.day06;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
