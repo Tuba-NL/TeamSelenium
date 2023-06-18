@@ -1,4 +1,4 @@
-package TeamPackage.day_12;
+package TeamPackage.day12;
 
 import org.junit.Assert;
 import org.junit.Test;

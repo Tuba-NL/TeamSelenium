@@ -1,4 +1,4 @@
-package TeamPackage.day_12;
+package TeamPackage.day12;
 
 import org.junit.Test;
 import org.openqa.selenium.By;

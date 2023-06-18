@@ -1,8 +1,7 @@
-package TeamPackage.day_12;
+package TeamPackage.day12;
 
 import org.junit.Assert;
 import org.junit.Test;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.WindowType;
 import utilities.TestBase;
 
