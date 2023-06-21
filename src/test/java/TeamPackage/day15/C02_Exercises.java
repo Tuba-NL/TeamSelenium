@@ -122,6 +122,17 @@ public class C02_Exercises extends TestBase {
         //5-üçüncü ürüne relative locater kullanarak tıklayin
         driver.findElement(By.xpath("(//*[@class='a-size-medium a-color-base a-text-normal'])[3]")).click();
 
+        /*
+        //4. ikinci ürüne relative locater kullanarak tıklayin
+    WebElement ilkUrun = driver.
+        findElement(By.xpath("(//*[@class='a-size-base-plus a-color-base a-text-normal'])[1]"));
+    bekle(2);
+
+    WebElement ikinciUrun = driver.findElement(with(By.tagName("span")).toRightOf(ilkUrun));
+    ikinciUrun.click();
+         */
+
+
         //6-title ve fiyat bilgilerini assign edelim ve ürünü sepete ekleyin
         System.out.println("Urun Basligi : " + driver.getTitle());
         WebElement fiyat = driver.findElement(By.xpath("//*[@class='a-price aok-align-center reinventPricePriceToPayMargin priceToPay']"));
