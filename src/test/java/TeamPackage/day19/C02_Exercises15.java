@@ -1,12 +1,11 @@
 package TeamPackage.day19;
 
-import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import utilities.TestBase;
 
-public class Exercises15 extends TestBase {
+public class C02_Exercises15 extends TestBase {
 
     //  1. Launch browser
     //  2. Navigate to url 'http://automationexercise.com'
