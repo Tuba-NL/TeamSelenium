@@ -1,0 +1,102 @@
+Dev environment: Bu ortam developerlarin kullandigi ortamdir. Developerlar kendi unit testlerini tamamladiktan sonra application qa environment’a aktarilir.
+2-QA environment: Bu ortam testerlarin testlerini yuruttugu ortamdir. Hata ile karsilasildiginda developera bilgi verilir. Developer duzeltmesini dev envoronmetta yaptiktan sonra ilgili fonksiyon tekrar qa environmet’a aktarilir.
+3-Stage(Pre-prod) environment: testerlar testlerini tamamlayip application buglarindan arindirildiginda application bu oratama aktarilir. Bu ortam canli ortamin bir kopyasidir. UAT(User Acceptance Testing) Testleri bu ortamda yapilir.
+4-Prod environment: UAT’den basari ile gecen applicationin aktarildigi ortamdir. Son kullanicinin kullandigi ortamdir.
+
+
+
+        /*
+        Planlama(Ortaklar) - Analiz(BA) - Tasarim (System artitech - UI UX Designer)
+        shift left testing-Solo Kaydirma Testi ==>Tester'i daha onceki asamalarda devreye sokmak
+        business reguirement document(brd) --business taraf ile sirket arasindaki uzlasma
+        frd(functional requirement document)dev ve tester'larin yapmasi gereken kurallari iceren teknik dokuman
+        Bazi projelerde user story de denir. Ama daha teknik sirketlerde frd denir (PBI=Product Backlog Item.)
+
+         */
+
+  /*
+       Test Case yazarken test tekniklerine uygun test case yazmaliyiz
+       Teknik aynidir ama test datasi degisir.
+       Sinir deger analizi, denklik paylarina ayirma, karar tablosu, durum gecis senaryosu test teknigi (belli bir sarta gore durumlarin degistigi)
+       Bu test tekniklerini iyice sindirip testleri yazmaliyiz
+       Test Tekniklerini minumum test senaryosu ile maksimum alani test etmek icin kullaniriz
+        */
+
+
+    /*
+       Ne zaman teste baslarsin?
+       Development bitmeden requirement'i anlamakla baslar. Uygulamanin daha duzgun calismasi icin user storyleri de incelemekle baslar
+       Test ne zaman biter?
+       Test caseleri tamamlayip bug'lari fixledikten sonra basarili sonlabilir veya development sonlanmis ama cok fazla bug oldugu icin testler developer a gonderilir.
+       Bir oran verilirse %98 hatasiz testle tamamlanabilir. Bazen yuzde verilmez tum case'ler basarili olarak kosularak tamamlanir.
+
+        */
+
+       /*
+       Hatalara derece verilebilir. Bunlara onem derecesine gore islem yapilabilir. minor,medium vs..
+       JIRA,ALM gibi proje yonetim araclarindan hangisi kullaniliyorsa bulunan hatalar icin burda kayit acilir
+       1-Derece Hatalar ==> Sistemin calismani direkt etkiler
+       2-Derece Hatalar ==> Sistemin calismani direkt etkilemez fama islevsel olarak bazi kisimlarin calismani engeller
+       3-Derece Hatalar ==> Sistemin calismasinda bir problem yok ama kozmetik hatalar, gorsel hatalar gibi..
+            */
+
+             /*
+                    Risk Yonetimi
+      Olusabilecek tum riskler (isten ayrilma, butcenin tukenmesi vs.gibi ) Proje Risk Veri Tabani ile kayit altina alinmalidir.
+      Test faaliyetinin ilerlemesini engelleyebilecek riskler;
+
+      *Gereksinimlerin cikarilmasinin gecikmesi test adimlarini veya test senaryolarinin yazilmasini geciktirebilir
+      *Test ekibinin farkli projelerde gorev yapmasi test faaliyetlerini aksatabilir
+      *Proje modullerinin zamaninda tamamlanmamasi..
+
+       */
+      /*
+      Gorev ve Sorumluluklar
+      Birim Testleri  ===> Dev Ekibi
+      Entegrasyon Testleri ===> Dev +QA
+      Sistem Testleri ===> QA
+      User Acceptance Testleri ==> Kullanici +QA
+       */
+
+         /*
+      Test Ortami ve Test Araclari
+      Kullanilacak test araclari ve kullanilacak test ortami (bilgisayar ve surumu vs)
+       */
+      /*
+      Test Takvimi
+      Proje suresini canliya cikis tarihine gore detaylandirilarak bir takvim olusturulmasi. Buna gore testlerin baslangic ve bitis tarihleri bu takvimde belirlenbilir
+       */
+
+       NOT: Ne kadar detayli bir test plani olursa kim ne isi ne zaman yapacagini daha cabuk kavrar.
+
+       NOT: Tek bir yazilim test plani hazirlanip projenin durumuna gore revize edilerek kullanilabilir
+
+  /*
+        Yazilim Test Plani
+        -Icindekiler
+        -Tanimlar ve Kisaltmalar
+        -Test Stratejileri
+        -Test Edilecek ve Edilmeyecek Yerler
+        -Testin ne zaman durdurulacagi 1-2-3. derece durumlar
+        -Hatanin tanimi-Onem derecesi-Test Edilen Oge (Doldurulmasi Zorunlu Alanlar Gibi Dusunebiliriz
+        -Test Sonuc Raporlama (Bunun icin ayri uygulamalar mevcut Hata Raporlari ekran goruntuleri vcs)
+        -Test Sorumluluklari ve Egitim Ihtiyaci (Kim ne is yapacak - Gorev Tanimi)
+        -Test Ortami (Testin hangi ortamda kullanilacagi- Kullanilacak Araclar)
+        -Test Ciktilari (Test Plani - Test Tanimlama Belgesi(User Story - Acceptance Criteria - Test Caseler) - Test Sonuc Raporu)
+
+    -Test Plani her zaman karsimiza cikmayabilir ama Test Case mutlaka karsimiza cikar
+    *********Test Case Yazarken Nelere Dikkat Ederiz????
+     *** Gereksinimler
+    ***Kabul Kriterleri
+    ****Az Sayida Test Case ile Cok Fazla Alani Test Etmemizi Saglayacak Test Teknikleri
+                */
+
+
+   Test Coverage --> Test Kapsami
+   Her sart icin en az 2 uzeri 1 test yazilmali
+   Test Case in kapsami mumkun oldugu kadar genis olmali
+
+
+   //--Otomasyon test yapmak icin uctan uca test olmali Ilk adim login son adim dogrulama olmali
+
+   //--Test Case yazarken olusabilecek tum durumlari kapsayabilecek caseler yazmaliyiz
